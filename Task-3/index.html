@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+        <nav>
+            <ul>
+                <li><a href="#quiz-section">Quiz</a></li>
+                <li><a href="#carousel-section">Carousel</a></li>
+                <li><a href="#api-section">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="section">
+            <h2>Interactive Quiz</h2>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+                <div class="quiz-controls">
+                    <button id="prev" class="btn">Previous</button>
+                    <button id="next" class="btn">Next</button>
+                    <button id="submit" class="btn">Submit Quiz</button>
+                </div>
+                <div id="results"></div>
+            </div>
+        </section>
+
+        <!-- Image Carousel Section -->
+        <section id="carousel-section" class="section">
+            <h2>Image Carousel</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slides">
+                        <div class="carousel-slide active">
+                            <img src="https://picsum.photos/800/400?random=1" alt="Image 1">
+                            <div class="caption">Beautiful Landscape 1</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/800/400?random=2" alt="Image 2">
+                            <div class="caption">Cityscape 2</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/800/400?random=3" alt="Image 3">
+                            <div class="caption">Nature 3</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/800/400?random=4" alt="Image 4">
+                            <div class="caption">Mountains 4</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev" aria-label="Previous slide">&#10094;</button>
+                <button class="carousel-control next" aria-label="Next slide">&#10095;</button>
+                <div class="carousel-indicators"></div>
+            </div>
+        </section>
+
+        <!-- API Data Section -->
+        <section id="api-section" class="section">
+            <h2>Weather Information</h2>
+            <div class="api-container">
+                <div class="location-input">
+                    <input type="text" id="city-input" placeholder="Enter city name">
+                    <button id="get-weather" class="btn">Get Weather</button>
+                </div>
+                <div id="weather-data" class="weather-data">
+                    <p>Enter a city name to get current weather information</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Advanced CSS & JavaScript Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
